@@ -54,7 +54,7 @@ html:focus-within {
 body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
-	line-height: 1.5;
+	line-height: 1.33;
 }
 
 /* A elements that don't have a class get default styles */
@@ -96,11 +96,80 @@ select {
 /* Custom properties setup */
 :root {
 	/* colours */
+	--clr-neutral-100: hsl(0deg 0% 100%);
+	--clr-neutral-200: hsl(230deg 21% 95%);
+	--clr-neutral-300: hsl(225deg 17% 82%);
+	--clr-neutral-400: hsl(223deg 7% 53%);
+	--clr-neutral-600: hsl(226deg 6% 40%);
+	--clr-neutral-800: hsl(225deg 13% 12%);
+
+	--clr-error: hsl(0deg 68% 61%);
 
 	/* font */
+	--ff-primary: 'League Spartan', sans-serif;
+
+	--fw-regular: 500;
+	--fw-bold: 700;
+
+	--fz-nav-link: 2rem;
+	--fz-echo-heading: 7.5rem;
+	--fz-400: 1.125rem;
+	--fz-500: 1.25rem;
+	--fz-600: 2rem;
+	--fz-700: 3rem;
+	--fz-800: 3rem;
+
+	/* letter spacing */
+	--ls-200: -0.31px;
+	--ls-300: -1.2px;
+	--ls-400: -1.71px;
+	--ls-600: -3px;
+}
+
+@media only screen and (min-width: 50em) {
+	:root {
+		--fz-nav-link: 1.125rem;
+		--fz-700: 4.5rem;
+		--fz-800: 6rem;
+
+		--ls-300: -2px;
+		--ls-400: -2px;
+		--ls-600: -5px;
+	}
+}
+
+@media only screen and (min-width: 62em) {
+	:root {
+		--fz-echo-heading: 15.625rem;
+	}
 }
 
 /* Base */
+body {
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-regular);
+	color: var(--clr-neutral-600);
+}
+
+h1 {
+	letter-spacing: var(--ls-300);
+}
+
+h2 {
+	letter-spacing: var(--ls-400);
+}
+
+h1,
+h2 {
+	line-height: 1.1;
+}
+
+@media only screen and (min-width: 50em) {
+	h1,
+	h2 {
+		line-height: 0.88;
+	}
+}
 
 /* Utility */
 .visually-hidden {
@@ -113,10 +182,35 @@ select {
 	white-space: nowrap;
 }
 
+.skip-link {
+	/* positioning */
+	position: absolute;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	transform: translateY(-120%);
+	display: inline-block;
+	padding: 1em;
+	/* typography */
+	font-weight: var(--fw-700);
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--clr-neutral-100);
+	/* appearance */
+	background-color: var(--clr-neutral-600);
+	border-bottom-right-radius: 0.25rem;
+	/* other */
+	transition: transform 0.35s ease;
+}
+
+.skip-link:focus {
+	transform: translateY(0);
+}
+
 /* Layout */
 .container {
 	--max-width: 69.375rem;
-	--padding-inline: 1.5rem;
+	--padding-inline: 2rem;
 	margin-inline: auto;
 	width: min(var(--max-width), 100% - 2 * var(--padding-inline));
 }
