@@ -14,11 +14,47 @@
 
 <body>
 
-    Home
+    <a href="main-content"
+       class="skip-link">Skip to content</a>
 
-    Portfolio
-    About Us
-    Contact
+    <div class="container">
+        <nav class="page-navigation">
+            <a href="#">
+                <img src="./src/assets/logo.svg"
+                     alt="Arch logo">
+            </a>
+
+            <button aria-controls="primary-nav"
+                    aria-expanded="false"
+                    aria-label="Open menu"
+                    class="menu-toggle">
+                <img src="./src/assets/icons/icon-hamburger.svg"
+                     alt=""
+                     class="menu-toggle__icon-open">
+                <img src="./src/assets/icons/icon-close.svg"
+                     alt=""
+                     class="menu-toggle__icon-close">
+            </button>
+
+            <div id="primary-nav"
+                 class="page-navigation__nav">
+                <ul class="page-navigation__nav-list">
+                    <li>
+                        <a href="./pages/portfolio.html"
+                           class="link nav-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/about.html"
+                           class="link nav-link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html"
+                           class="link nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
     Project Paramour
 
