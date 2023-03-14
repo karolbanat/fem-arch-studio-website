@@ -188,6 +188,10 @@ h2 {
 	cursor: pointer;
 }
 
+.menu-toggle * {
+	pointer-events: none;
+}
+
 .menu-toggle[aria-expanded='false'] .menu-toggle__icon-close {
 	display: none;
 }
