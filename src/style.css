@@ -226,6 +226,7 @@ h2 {
 
 /* navigation */
 .page-navigation {
+	z-index: 9999;
 	padding-block: clamp(2rem, 1.125rem + 5vw, 3.5rem);
 }
 
