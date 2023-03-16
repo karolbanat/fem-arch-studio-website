@@ -357,7 +357,7 @@ h2 {
 .slide__body {
 	margin-inline: clamp(2rem, 7.5vw, 3.625rem);
 	padding-block: 2rem;
-	max-width: 33.75rem;
+	max-width: 30.25rem;
 }
 
 .slide__image {
