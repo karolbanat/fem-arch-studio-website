@@ -185,6 +185,7 @@ h2 {
 
 	padding: 1.33em 2em;
 
+	font-weight: var(--fw-bold, 700);
 	text-decoration: none;
 	color: var(--clr-neutral-100);
 
