@@ -15,6 +15,7 @@ export function mountSlider(className: string = 'splide'): void {
 				pagination: false,
 			},
 		},
+		type: 'loop',
 	});
 
 	splide.on('pagination:mounted', function (data) {
