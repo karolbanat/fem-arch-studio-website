@@ -1,6 +1,6 @@
-import './style.css';
 import { handleMenuToggle } from './ts/menu-toggle';
 import { mountSlider } from './ts/slider';
+import './style.css';
 
 /* types */
 export type Animations = 'animation-slide-fade-down' | 'animation-slide-fade-up';
