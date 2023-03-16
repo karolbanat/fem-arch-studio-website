@@ -1,5 +1,6 @@
 import './style.css';
 import { handleMenuToggle } from './ts/menu-toggle';
+import { mountSlider } from './ts/slider';
 
 /* types */
 export type Animations = 'animation-slide-fade-down' | 'animation-slide-fade-up';
@@ -11,3 +12,6 @@ const pageNavigationButton: HTMLButtonElement = document.querySelector('#page-na
 pageNavigationButton.addEventListener('click', (e: Event) => {
 	handleMenuToggle(e.target as HTMLButtonElement);
 });
+
+/* other */
+mountSlider();
