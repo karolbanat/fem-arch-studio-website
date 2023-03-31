@@ -176,7 +176,7 @@
         </div>
 
         <div class="container">
-            <div class="intro | flex-align-end parent">
+            <div class="intro | flex-align-end parent overflow-hidden">
                 <div class="intro__body | flow">
                     <p aria-hidden="true"
                        class="echo-heading | display-none-sm"
@@ -204,33 +204,96 @@
     <main>
         <div class="container"
              data-spacer="none-sm">
-            <section class="cta | shadow-overlay">
-                <h2 class="section-heading | heading-limited text-neutral-100">Small team, big ideas</h2>
+            <section aria-labelledby="cta-heading"
+                     class="cta | shadow-overlay">
+                <h2 id="cta-heading"
+                    class="section-heading | heading-limited text-neutral-100 front-sm">Small team, big ideas</h2>
                 <a href="./pages/about.html"
-                   class="button">
+                   class="button | front-sm">
                     <span>About Us</span>
                     <img src="./src/assets/icons/icon-arrow.svg"
                          alt="">
                 </a>
             </section>
         </div>
+
+        <section aria-labelledby="featured-heading"
+                 class="featured">
+            <div class="container">
+                <div class="grid-featured">
+                    <h2 id="featured-heading"
+                        class="section-heading | grid-align-center"
+                        data-area="heading">Featured</h2>
+
+                    <ul class="numbered-list | grid-triple-columns"
+                        data-area="list">
+                        <li>
+                            <article class="card project-card">
+                                <picture class="shadow-overlay">
+                                    <source media="(min-width: 992px)"
+                                            srcset="./src/assets/portfolio/desktop/image-del-sol.jpg">
+                                    <source media="(min-width: 768px)"
+                                            srcset="./src/assets/portfolio/tablet/image-del-sol.jpg">
+                                    <img src="./src/assets/portfolio/mobile/image-del-sol.jpg"
+                                         alt=""
+                                         class="card__image">
+                                </picture>
+                                <div class="project-card__body">
+                                    <h3 class="card__title">Project Del Sol</h3>
+                                    <a href="./pages/portfolio.html"
+                                       class="link project-card__subtext">View All Projects</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="card project-card">
+                                <picture class="shadow-overlay">
+                                    <source media="(min-width: 992px)"
+                                            srcset="./src/assets/portfolio/desktop/image-228b.jpg">
+                                    <source media="(min-width: 768px)"
+                                            srcset="./src/assets/portfolio/tablet/image-228b.jpg">
+                                    <img src="./src/assets/portfolio/mobile/image-228b.jpg"
+                                         alt=""
+                                         class="card__image">
+                                </picture>
+                                <div class="project-card__body">
+                                    <h3 class="card__title">228B Tower</h3>
+                                    <a href="./pages/portfolio.html"
+                                       class="link project-card__subtext">View All Projects</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="card project-card">
+                                <picture class="shadow-overlay">
+                                    <source media="(min-width: 992px)"
+                                            srcset="./src/assets/portfolio/desktop/image-prototype.jpg">
+                                    <source media="(min-width: 768px)"
+                                            srcset="./src/assets/portfolio/tablet/image-prototype.jpg">
+                                    <img src="./src/assets/portfolio/mobile/image-prototype.jpg"
+                                         alt=""
+                                         class="card__image">
+                                </picture>
+                                <div class="project-card__body">
+                                    <h3 class="card__title">Le Prototype</h3>
+                                    <a href="./pages/portfolio.html"
+                                       class="link project-card__subtext">View All Projects</a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+
+                    <a href="./pages/portfolio.html"
+                       class="button | grid-justify-end-md"
+                       data-area="cta">
+                        <span>See all</span>
+                        <img src="./src/assets/icons/icon-arrow.svg"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-
-    Featured
-
-    See all
-
-    1
-    Project Del Sol
-    View All Projects
-
-    2
-    228B Tower
-    View All Projects
-
-    3
-    Le Prototype
-    View All Projects
 
     Portfolio
     About Us
