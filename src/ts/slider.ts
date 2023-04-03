@@ -2,6 +2,8 @@ import { Splide } from '@splidejs/splide';
 import '@splidejs/splide/css';
 
 export function mountSlider(className: string = 'splide'): void {
+	if (!document.querySelector(`.${className}`)) return;
+
 	const splide = new Splide(`.${className}`, {
 		arrows: false,
 		perPage: 1,

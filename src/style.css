@@ -630,6 +630,23 @@ h2 {
 	}
 }
 
+/* --- portfolio */
+.portfolio-gallery {
+	margin-block-end: 4.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+	.portfolio-gallery {
+		padding-block-end: 12.5rem;
+	}
+}
+
+@media only screen and (min-width: 62em) {
+	.portfolio-gallery {
+		padding-inline-end: 10rem;
+	}
+}
+
 /* Utility */
 .visually-hidden {
 	clip: rect(0 0 0 0);

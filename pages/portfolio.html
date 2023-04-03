@@ -16,53 +16,330 @@
 
 <body>
 
-    Portfolio
+    <a href="main-content"
+       class="skip-link">Skip to content</a>
 
-    Portfolio
-    About Us
-    Contact
+    <nav class="page-navigation">
+        <div class="container">
+            <div class="flex-page-navigation">
+                <a href="../index.html">
+                    <img src="/src/assets/logo.svg"
+                         alt="Arch logo">
+                </a>
 
-    Seraph Station
-    September 2019
+                <button aria-controls="primary-nav"
+                        aria-expanded="false"
+                        aria-label="Open menu"
+                        id="page-navigation-toggle"
+                        class="menu-toggle | display-none-md"
+                        data-media="min">
+                    <img src="/src/assets/icons/icon-hamburger.svg"
+                         alt=""
+                         class="menu-toggle__icon-open">
+                    <img src="/src/assets/icons/icon-close.svg"
+                         alt=""
+                         class="menu-toggle__icon-close">
+                </button>
 
-    Eebox Building
-    August 2017
+                <div id="primary-nav"
+                     class="page-navigation__nav">
+                    <ul class="page-navigation__nav-list">
+                        <li>
+                            <a href="#"
+                               class="link nav-link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="/pages/about.html"
+                               class="link nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/pages/contact.html"
+                               class="link nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    Federal II Tower
-    March 2017
+    <main id="main-content">
+        <h1 class="visually-hidden">Protfolio - projects</h1>
 
-    Project Del Sol
-    January 2016
+        <section aria-labelledby="gallery-heading"
+                 class="portfolio-gallery">
+            <h2 id="gallery-heading"
+                class="visually-hidden">Gallery of our projects</h2>
 
-    Le Prototype
-    October 2015
+            <div class="container">
+                <ul class="grid-triple-columns">
+                    <!-- Seraph station -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-seraph.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-seraph.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-seraph.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Seraph Station</h3>
+                                <p class="project-card__subtext">September 2019</p>
+                            </div>
+                        </article>
+                    </li>
 
-    228B Tower
-    April 2015
+                    <!-- Eebox Building -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-eebox.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-eebox.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-eebox.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Eebox Building</h3>
+                                <p class="project-card__subtext">August 2017</p>
+                            </div>
+                        </article>
+                    </li>
 
-    Grand Edelweiss Hotel
-    December 2013
 
-    Netcry Tower
-    August 2012
+                    <!-- Federal || Tower -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-federal.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-federal.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-federal.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Federal II Tower</h3>
+                                <p class="project-card__subtext">March 2017</p>
+                            </div>
+                        </article>
+                    </li>
 
-    Hypers
-    January 2012
+                    <!-- Project Del Sol -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-del-sol.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-del-sol.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-del-sol.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Project Del Sol</h3>
+                                <p class="project-card__subtext">January 2016</p>
+                            </div>
+                        </article>
+                    </li>
 
-    SXIV Tower
-    March 2011
+                    <!-- Le Prototype -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-prototype.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-prototype.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-prototype.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Le Prototype</h3>
+                                <p class="project-card__subtext">Ovtober 2015</p>
+                            </div>
+                        </article>
+                    </li>
 
-    Trinity Bank Tower
-    September 2010
+                    <!-- 228B Tower -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-228b.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-228b.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-228b.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">228B Tower</h3>
+                                <p class="link project-card__subtext">April 2015</p>
+                            </div>
+                        </article>
+                    </li>
 
-    Project Paramour
-    February 2008
+                    <!-- Grand Edelweiss Hotel -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-edelweiss.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-edelweiss.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-edelweiss.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Grand Edelweiss Hotel</h3>
+                                <p class="link project-card__subtext">December 2013</p>
+                            </div>
+                        </article>
+                    </li>
 
-    Portfolio
-    About Us
-    Contact
+                    <!-- Netcry Tower -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-netcry.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-netcry.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-netcry.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Netcry Tower</h3>
+                                <p class="link project-card__subtext">August 2012</p>
+                            </div>
+                        </article>
+                    </li>
 
-    See Our Portfolio
+                    <!-- Hypers -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-hypers.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-hypers.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-hypers.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Hypers</h3>
+                                <p class="link project-card__subtext">January 2012</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- SXIV Tower -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-sxiv.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-sxiv.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-sxiv.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">SXIV Tower</h3>
+                                <p class="link project-card__subtext">March 2011</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Trinity Bank Tower -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-trinity.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-trinity.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-trinity.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Trinity Bank Tower</h3>
+                                <p class="link project-card__subtext">September 2010</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Project Paramour -->
+                    <li>
+                        <article class="card project-card">
+                            <picture class="shadow-overlay">
+                                <source media="(min-width: 992px)"
+                                        srcset="/src/assets/portfolio/desktop/image-paramour.jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="/src/assets/portfolio/tablet/image-paramour.jpg">
+                                <img src="/src/assets/portfolio/mobile/image-paramour.jpg"
+                                     alt=""
+                                     class="card__image">
+                            </picture>
+                            <div class="project-card__body">
+                                <h3 class="card__title">Project Paramour</h3>
+                                <p class="link project-card__subtext">February 2008</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="container"
+         data-spacer="none-md">
+        <footer class="page-footer">
+            <div class="logo-container">
+                <a href="/index.html">
+                    <img src="/src/assets/logo-light.svg"
+                         alt="Arch homepage">
+                </a>
+            </div>
+
+            <nav>
+                <ul class="page-footer__nav-list">
+                    <li>
+                        <a href="#"
+                           class="link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/pages/about.html"
+                           class="link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contact.html"
+                           class="link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/pages/portfolio.html"
+               class="button">
+                <span>See Our Portfolio</span>
+                <img src="/src/assets/icons/icon-arrow.svg"
+                     alt="">
+            </a>
+        </footer>
+    </div>
 
     <script type="module"
             src="/src/main.ts"></script>
