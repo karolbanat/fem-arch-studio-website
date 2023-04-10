@@ -15,32 +15,102 @@
 </head>
 
 <body>
+    <a href="main-content"
+       class="skip-link">Skip to content</a>
 
-    About Us
+    <nav class="page-navigation">
+        <div class="container">
+            <div class="flex-page-navigation">
+                <a href="/index.html">
+                    <img src="/src/assets/logo.svg"
+                         alt="Arch logo">
+                </a>
 
-    Portfolio
-    About Us
-    Contact
+                <button aria-controls="primary-nav"
+                        aria-expanded="false"
+                        aria-label="Open menu"
+                        id="page-navigation-toggle"
+                        class="menu-toggle | display-none-md"
+                        data-media="min">
+                    <img src="/src/assets/icons/icon-hamburger.svg"
+                         alt=""
+                         class="menu-toggle__icon-open">
+                    <img src="/src/assets/icons/icon-close.svg"
+                         alt=""
+                         class="menu-toggle__icon-close">
+                </button>
 
-    About
+                <div id="primary-nav"
+                     class="page-navigation__nav">
+                    <ul class="page-navigation__nav-list">
+                        <li>
+                            <a href="/pages/portfolio.html"
+                               class="link nav-link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               class="link nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/pages/contact.html"
+                               class="link nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    Your team of professionals
+    <div class="container"
+         data-spacer="none-sm">
+        <header class="hero">
+            <picture>
+                <source media="(min-width: 992px)"
+                        srcset="/src/assets/about/desktop/image-hero.jpg">
+                <source media="(min-width: 768px)"
+                        srcset="/src/assets/about/tablet/image-hero.jpg">
+                <img src="/src/assets/about/mobile/image-hero.jpg"
+                     alt=""
+                     class="hero__image">
+            </picture>
 
-    Our small team of world-class professionals will work with you every step of the way.
-    Strong relationships are at the core of everything we do. This extends to the
-    relationship our projects have with their surroundings.
+            <div class="hero__body | flow parent">
+                <p aria-hidden="true"
+                   class="echo-heading | display-none-sm"
+                   data-media="max"
+                   data-section="hero">About</p>
+                <h1 class="section-heading"
+                    style="--flow-spacer: 0;">Your team of professionals</h1>
+                <p>Our small team of world-class professionals will work with you every step of the way.
+                    Strong relationships are at the core of everything we do. This extends to the
+                    relationship our projects have with their surroundings.</p>
+            </div>
+        </header>
+    </div>
 
-    Our Heritage
+    <main id="main-content">
 
-    Founded in 2007, we started as a trio of architects. Our complimentary skills and
-    relentless attention to detail turned Arch into one of the most sought after boutique
-    firms in the country.
+        <div class="container">
+            <section class="intro | flex-align-end parent overflow-hidden">
+                <div class="intro__body | flow">
+                    <h2 class="section-heading"
+                        data-width="narrow">Our Heritage</h2>
+                    <p>Founded in 2007, we started as a trio of architects. Our complimentary skills and
+                        relentless attention to detail turned Arch into one of the most sought after boutique
+                        firms in the country.</p>
+                    <p>Speciliazing in Urban Design allowed us to focus on creating exceptional structures that
+                        live in harmony with their surroundings. We consider every detail from every surrounding
+                        element to inform our designs.</p>
+                    <p>Our small team of world-class professionals provides input on every project.</p>
+                </div>
+                <img src="/src/assets/about/desktop/image-heritage.jpg"
+                     alt=""
+                     class="display-none-lg"
+                     data-media="max">
+            </section>
+        </div>
+    </main>
 
-    Speciliazing in Urban Design allowed us to focus on creating exceptional structures that
-    live in harmony with their surroundings. We consider every detail from every surrounding
-    element to inform our designs.
-
-    Our small team of world-class professionals provides input on every project.
 
     The Leaders
 
@@ -61,6 +131,42 @@
     Contact
 
     See Our Portfolio
+
+    <div class="container"
+         data-spacer="none-md">
+        <footer class="page-footer">
+            <div class="logo-container">
+                <a href="/index.html">
+                    <img src="/src/assets/logo-light.svg"
+                         alt="Arch homepage">
+                </a>
+            </div>
+
+            <nav aria-label="footer">
+                <ul class="page-footer__nav-list">
+                    <li>
+                        <a href="/pages/portfolio.html"
+                           class="link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contact.html"
+                           class="link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/pages/portfolio.html"
+               class="button">
+                <span>See Our Portfolio</span>
+                <img src="/src/assets/icons/icon-arrow.svg"
+                     alt="">
+            </a>
+        </footer>
+    </div>
 
     <script type="module"
             src="/src/main.ts"></script>
