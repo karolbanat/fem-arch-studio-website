@@ -512,7 +512,12 @@ h2 {
 }
 
 /* cards */
+.card {
+	color: var(--lead-colour);
+}
+
 .card__title {
+	margin-block-start: 1rem;
 	font-size: var(--fz-600);
 	font-weight: var(--fw-bold, 700);
 	line-height: 1.25;
@@ -524,9 +529,14 @@ h2 {
 	object-position: center;
 }
 
+.card__subtext {
+	font-weight: var(--fw-regular, 400);
+	opacity: 0.75;
+}
+
 .project-card {
+	--lead-colour: var(--clr-neutral-100);
 	display: grid;
-	color: var(--clr-neutral-100);
 }
 
 .project-card > * {
@@ -540,9 +550,43 @@ h2 {
 	padding: clamp(1.5rem, 1rem + 3vw, 2.5rem);
 }
 
-.project-card__subtext {
-	font-weight: var(--fw-regular, 400);
-	opacity: 0.75;
+.leader-card {
+	--lead-colour: var(--clr-neutral-800);
+}
+
+.leader-card img {
+	width: 100%;
+}
+
+.socials-overlay {
+	position: relative;
+}
+
+.socials-overlay:not(:hover, :focus-within) .socials-overlay__container {
+	opacity: 0;
+}
+
+.socials-overlay__container {
+	position: absolute;
+	inset: 0;
+	isolation: isolate;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+
+	transition: opacity 350ms ease-in-out;
+}
+
+.socials-overlay__container::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+
+	background-color: hsl(0deg 0% 0% / 0.35);
 }
 
 /* --- lists */
@@ -670,6 +714,10 @@ h2 {
 	background-color: var(--clr-neutral-100);
 }
 
+.leaders {
+	padding-block-end: 7.5rem;
+}
+
 @media only screen and (max-width: 48em) {
 	.hero__body {
 		margin-block-start: -2.75rem;
@@ -690,6 +738,10 @@ h2 {
 		place-self: end;
 		padding-block-start: 10rem;
 	}
+
+	.leaders {
+		padding-block-end: 15rem;
+	}
 }
 
 @media only screen and (max-width: 62em) {
@@ -705,6 +757,10 @@ h2 {
 
 	.hero__body {
 		--flow-spacer: 3rem;
+	}
+
+	.leaders {
+		padding-block-end: 10rem;
 	}
 }
 
@@ -851,6 +907,19 @@ h2 {
 	gap: 1.5rem;
 }
 
+.grid-double-columns {
+	--row-gap: 5rem;
+	--column-gap: 0.75rem;
+	display: grid;
+	row-gap: var(--row-gap);
+	column-gap: var(--column-gap);
+}
+
+.grid-double-uneven-columns {
+	display: grid;
+	gap: 3rem;
+}
+
 .grid-featured {
 	display: grid;
 	gap: 1.5rem;
@@ -885,6 +954,10 @@ h2 {
 			'list list';
 	}
 
+	.grid-double-columns {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	.grid-justify-end-md {
 		justify-self: end;
 	}
@@ -893,6 +966,16 @@ h2 {
 @media only screen and (min-width: 62em) {
 	.grid-triple-columns {
 		grid-template-columns: repeat(3, 1fr);
+		gap: 1.875rem;
+	}
+
+	.grid-double-columns {
+		--row-gap: 4rem;
+		--column-gap: 1.875rem;
+	}
+
+	.grid-double-uneven-columns {
+		grid-template-columns: 21.875rem auto;
 		gap: 1.875rem;
 	}
 
