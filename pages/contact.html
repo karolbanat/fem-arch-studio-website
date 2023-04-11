@@ -9,26 +9,88 @@
     <link rel="icon"
           type="image/png"
           sizes="32x32"
-          href="./favicon-32x32.png">
+          href="/favicon-32x32.png">
 
     <title>Frontend Mentor | Arch Studio Website Challenge</title>
 </head>
 
 <body>
+    <a href="main-content"
+       class="skip-link">Skip to content</a>
 
-    Contact
+    <nav class="page-navigation">
+        <div class="container">
+            <div class="flex-page-navigation">
+                <a href="/index.html">
+                    <img src="/src/assets/logo.svg"
+                         alt="Arch logo">
+                </a>
 
-    Portfolio
-    About Us
-    Contact
+                <button aria-controls="primary-nav"
+                        aria-expanded="false"
+                        aria-label="Open menu"
+                        id="page-navigation-toggle"
+                        class="menu-toggle | display-none-md"
+                        data-media="min">
+                    <img src="/src/assets/icons/icon-hamburger.svg"
+                         alt=""
+                         class="menu-toggle__icon-open">
+                    <img src="/src/assets/icons/icon-close.svg"
+                         alt=""
+                         class="menu-toggle__icon-close">
+                </button>
 
-    Contact
+                <div id="primary-nav"
+                     class="page-navigation__nav">
+                    <ul class="page-navigation__nav-list">
+                        <li>
+                            <a href="/pages/portfolio.html"
+                               class="link nav-link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="/pages/about.html"
+                               class="link nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               class="link nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    Tell us about your project
+    <div class="container"
+         data-spacer="none-sm">
+        <header class="hero">
+            <picture>
+                <source media="(min-width: 992px)"
+                        srcset="/src/assets/contact/desktop/image-hero.jpg">
+                <source media="(min-width: 768px)"
+                        srcset="/src/assets/contact/tablet/image-hero.jpg">
+                <img src="/src/assets/contact/mobile/image-hero.jpg"
+                     alt=""
+                     class="hero__image">
+            </picture>
 
-    We’d love to hear more about your project. Please, leave a message below or give
-    us a call. We have two offices, one in Texas and one in Tennessee. If you find
-    yourself nearby, come say hello!
+            <div class="hero__body | flow parent">
+                <p aria-hidden="true"
+                   class="echo-heading | display-none-sm"
+                   data-media="max"
+                   data-section="hero">Contact</p>
+                <h1 class="section-heading"
+                    style="--flow-spacer: 0;">Tell us about your project</h1>
+                <p>We’d love to hear more about your project. Please, leave a message below or give
+                    us a call. We have two offices, one in Texas and one in Tennessee. If you find
+                    yourself nearby, come say hello!</p>
+            </div>
+        </header>
+    </div>
+
+    <main id="main-content">
+
+    </main>
 
     Contact Details
 
@@ -53,11 +115,41 @@
     Message
 
 
-    Portfolio
-    About Us
-    Contact
+    <div class="container"
+         data-spacer="none-md">
+        <footer class="page-footer">
+            <div class="logo-container">
+                <a href="/index.html">
+                    <img src="/src/assets/logo-light.svg"
+                         alt="Arch homepage">
+                </a>
+            </div>
 
-    See Our Portfolio
+            <nav aria-label="footer">
+                <ul class="page-footer__nav-list">
+                    <li>
+                        <a href="/pages/portfolio.html"
+                           class="link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contact.html"
+                           class="link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/pages/portfolio.html"
+               class="button">
+                <span>See Our Portfolio</span>
+                <img src="/src/assets/icons/icon-arrow.svg"
+                     alt="">
+            </a>
+        </footer>
+    </div>
 
     <script type="module"
             src="/src/main.ts"></script>
