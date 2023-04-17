@@ -768,6 +768,10 @@ h2 {
 	margin-block-end: 4.5rem;
 }
 
+.map-area {
+	margin-block: 4.5rem;
+}
+
 @media only screen and (max-width: 48em) {
 	.hero__body {
 		margin-block-start: -2.75rem;
@@ -794,6 +798,10 @@ h2 {
 	}
 
 	.contact {
+		margin-block: 12.5rem;
+	}
+
+	.map-area {
 		margin-block: 12.5rem;
 	}
 }
@@ -866,6 +874,10 @@ h2 {
 	/* z-index: -1; */
 
 	background-color: hsl(0deg 0% 0% / 0.35);
+}
+
+.width-100 {
+	width: 100%;
 }
 
 /* spacers */
