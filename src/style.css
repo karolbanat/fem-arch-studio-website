@@ -740,6 +740,10 @@ h2 {
 	display: none;
 }
 
+.success-message {
+	color: hsl(135, 87%, 43%);
+}
+
 /* Pages */
 /* --- home */
 .intro {
@@ -748,7 +752,7 @@ h2 {
 }
 
 .section-spacer {
-	padding-block: 4.5rem;
+	margin-block: 4.5rem;
 }
 
 @media only screen and (min-width: 48em) {
@@ -757,7 +761,7 @@ h2 {
 	}
 
 	.section-spacer {
-		padding-block: 12.5rem;
+		margin-block: 12.5rem;
 	}
 }
 
