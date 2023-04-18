@@ -199,6 +199,7 @@ h2 {
 	color: var(--clr-neutral-100);
 
 	background-color: var(--clr-neutral-800);
+	border: none;
 	cursor: pointer;
 
 	transition: background-color var(--transition-duration) var(--transition-easing),
@@ -671,6 +672,74 @@ h2 {
 	}
 }
 
+/* --- forms */
+.contact-form {
+	--clr-input: var(--clr-neutral-800);
+	display: grid;
+	gap: 2.625rem;
+
+	font-size: var(--fz-500);
+	font-weight: var(--fw-bold, 700);
+	letter-spacing: var(--ls-200);
+	color: var(--clr-input);
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding-inline: 2.125rem;
+	padding-block-end: 1.25rem;
+	width: 100%;
+	max-width: 100%;
+
+	border: none;
+	border-bottom: 1px solid var(--clr-input);
+
+	transition: border-width 0.1s ease-in-out;
+}
+
+.contact-form textarea {
+	min-height: 5.75rem;
+	resize: vertical;
+}
+
+.contact-form :is(input, textarea):focus-visible {
+	border-bottom-width: 3px;
+	outline-offset: 4px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: var(--clr-input);
+	opacity: 0.5;
+}
+
+.contact-form button[type='submit'] {
+	justify-self: end;
+	padding: 0;
+	width: 5rem;
+	aspect-ratio: 1 / 1;
+}
+
+.input-group {
+	position: relative;
+}
+
+.input-group[data-error] {
+	--clr-input: var(--clr-error);
+}
+
+.input-error {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	color: var(--clr-error);
+	font-size: var(--fz-400);
+}
+
+.input-group:not([data-error]) .input-error {
+	display: none;
+}
+
 /* Pages */
 /* --- home */
 .intro {
@@ -678,7 +747,7 @@ h2 {
 	padding-block-end: 7rem;
 }
 
-.featured {
+.section-spacer {
 	padding-block: 4.5rem;
 }
 
@@ -687,7 +756,7 @@ h2 {
 		padding-block: 15rem;
 	}
 
-	.featured {
+	.section-spacer {
 		padding-block: 12.5rem;
 	}
 }
@@ -759,17 +828,13 @@ h2 {
 	background-color: var(--clr-neutral-100);
 }
 
-.leaders {
+.leaders-section {
 	padding-block-end: 7.5rem;
 }
 
-.contact {
+.contact-section {
 	margin-block-start: 6.25rem;
 	margin-block-end: 4.5rem;
-}
-
-.map-area {
-	margin-block: 4.5rem;
 }
 
 @media only screen and (max-width: 48em) {
@@ -793,15 +858,11 @@ h2 {
 		padding-block-start: 10rem;
 	}
 
-	.leaders {
+	.leaders-section {
 		padding-block-end: 15rem;
 	}
 
-	.contact {
-		margin-block: 12.5rem;
-	}
-
-	.map-area {
+	.contact-section {
 		margin-block: 12.5rem;
 	}
 }
@@ -821,7 +882,7 @@ h2 {
 		--flow-spacer: 3rem;
 	}
 
-	.leaders {
+	.leaders-section {
 		padding-block-end: 10rem;
 	}
 }

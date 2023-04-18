@@ -89,7 +89,7 @@
     </div>
 
     <main id="main-content">
-        <section class="contact">
+        <section class="contact-section">
             <div class="container">
                 <div class="grid-triple-columns"
                      style="--spacer-triple-columns: var(--spacer-contact-info-grid)">
@@ -130,7 +130,7 @@
         </section>
 
         <!-- Map -->
-        <div class="map-area">
+        <div class="section-spacer">
             <div class="container"
                  data-spacer="none-sm">
                 <picture>
@@ -144,14 +144,61 @@
                 </picture>
             </div>
         </div>
+
+        <!-- Contact form -->
+        <section class="section-spacer">
+            <div class="container">
+                <div class="grid-double-uneven-columns">
+                    <h2 class="section-heading"
+                        data-width="narrow">Connect with us</h2>
+
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <input aria-label="Name"
+                                   type="text"
+                                   placeholder="Name"
+                                   name="name"
+                                   id="name"
+                                   required>
+                            <p aria-live="polite"
+                               role="alert"
+                               class="input-error"></p>
+                        </div>
+
+                        <div class="input-group">
+                            <input aria-label="Email"
+                                   type="email"
+                                   placeholder="Email"
+                                   name="email"
+                                   id="email"
+                                   required>
+                            <p aria-live="polite"
+                               role="alert"
+                               class="input-error"></p>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea aria-label="Message"
+                                      placeholder="Message"
+                                      name="message"
+                                      id="message"
+                                      required></textarea>
+                            <p aria-live="polite"
+                               role="alert"
+                               class="input-error"></p>
+                        </div>
+
+                        <button aria-label="Submit"
+                                type="submit"
+                                class="button">
+                            <img src="/src/assets/icons/icon-arrow-light.svg"
+                                 alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-
-    Connect with us
-
-    Name
-    Email
-    Message
-
 
     <div class="container"
          data-spacer="none-md">
