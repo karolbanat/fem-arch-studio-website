@@ -814,7 +814,7 @@ h2 {
 
 @media only screen and (min-width: 62em) {
 	.portfolio-gallery {
-		padding-inline-end: 10rem;
+		padding-block-end: 10rem;
 	}
 }
 
@@ -925,6 +925,45 @@ h2 {
 
 .skip-link:focus {
 	transform: translateY(0);
+}
+
+.page-indicator {
+	--theme: var(--clr-neutral-300);
+	position: absolute;
+	top: 0;
+	left: -2rem;
+	transform: rotate(90deg);
+	transform-origin: top left;
+
+	display: inline-flex;
+	align-items: center;
+	gap: 3rem;
+
+	font-weight: var(--fw-regular, 500);
+	text-transform: uppercase;
+	letter-spacing: 1em;
+	color: var(--theme);
+}
+
+.page-indicator::before {
+	content: '';
+	display: block;
+
+	width: 6.5rem;
+	height: 1px;
+	background-color: var(--theme);
+}
+
+@media only screen and (max-width: 48rem) {
+	.page-indicator {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 80rem) {
+	.page-indicator {
+		left: -4.875rem;
+	}
 }
 
 .shadow-overlay {
