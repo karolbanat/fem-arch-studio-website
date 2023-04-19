@@ -615,7 +615,6 @@ h2 {
 .numbered-list > li {
 	position: relative;
 	counter-increment: num;
-	overflow: hidden;
 }
 
 @media only screen and (min-width: 48em) {
@@ -999,6 +998,10 @@ h2 {
 .link-reset {
 	text-decoration: none;
 	color: inherit;
+}
+
+.link-reset:focus-visible {
+	outline-offset: 4px;
 }
 
 /* --- display */
