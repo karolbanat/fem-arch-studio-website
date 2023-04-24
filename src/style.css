@@ -305,6 +305,35 @@ h2 {
 	transform: translateY(-50%);
 }
 
+.heading-line::before {
+	content: '';
+	display: block;
+
+	margin-block-end: 4.5rem;
+	height: 1px;
+	width: 4.0625rem;
+
+	background-color: var(--clr-neutral-300);
+}
+
+@media only screen and (max-width: 48rem) {
+	.heading-line[data-line-breakpoint='medium']::before {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 48rem) {
+	.heading-line::before {
+		margin-block-end: 3.125rem;
+	}
+}
+
+@media only screen and (min-width: 62rem) {
+	.heading-line::before {
+		margin-block-end: 3.625rem;
+	}
+}
+
 /* logo container */
 .logo-container {
 	display: grid;
