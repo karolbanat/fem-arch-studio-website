@@ -4,8 +4,8 @@ This is a solution to the [Arch Studio multi-page website challenge on Frontend 
 
 ## Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/arch-studio-multipage-website-d_RH0oLO0D)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/fem-arch-studio-website/)
 
 ## Built with
 
