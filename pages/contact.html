@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/fem-arch-studio-website/favicon-32x32.png">
+
+    <title>Frontend Mentor | Arch Studio Website Challenge</title>
+  <script type="module" crossorigin src="/fem-arch-studio-website/assets/main-d0ebd5cf.js"></script>
+  <link rel="stylesheet" href="/fem-arch-studio-website/assets/main-0f92607a.css">
+</head>
+
+<body>
+    <a href="main-content"
+       class="skip-link">Skip to content</a>
+
+    <div class="container parent">
+        <p aria-hidden="true"
+           class="page-indicator">Contact</p>
+
+        <nav aria-label="primary"
+             class="page-navigation">
+            <div class="flex-page-navigation">
+                <a href="/index.html">
+                    <img src="/fem-arch-studio-website/assets/logo-e3f41bd9.svg"
+                         alt="Arch logo">
+                </a>
+
+                <button aria-controls="primary-nav"
+                        aria-expanded="false"
+                        aria-label="Open menu"
+                        id="page-navigation-toggle"
+                        class="menu-toggle | display-none-md"
+                        data-media="min">
+                    <img src="/fem-arch-studio-website/assets/icon-hamburger-bf7cf0b4.svg"
+                         alt=""
+                         class="menu-toggle__icon-open">
+                    <img src="/fem-arch-studio-website/assets/icon-close-f63fe1a8.svg"
+                         alt=""
+                         class="menu-toggle__icon-close">
+                </button>
+
+                <div id="primary-nav"
+                     class="page-navigation__nav">
+                    <ul class="page-navigation__nav-list">
+                        <li>
+                            <a href="/pages/portfolio.html"
+                               class="link nav-link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="/pages/about.html"
+                               class="link nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               class="link nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container"
+         data-spacer="none-sm">
+        <header class="hero">
+            <picture>
+                <source media="(min-width: 992px)"
+                        srcset="/fem-arch-studio-website/assets/image-hero-609c557a.jpg ">
+                <source media="(min-width: 768px)"
+                        srcset="/fem-arch-studio-website/assets/image-hero-7d8aea96.jpg ">
+                <img src="/fem-arch-studio-website/assets/image-hero-0ac422b3.jpg"
+                     alt=""
+                     class="hero__image">
+            </picture>
+
+            <div class="hero__body | flow parent">
+                <p aria-hidden="true"
+                   class="echo-heading | display-none-sm"
+                   data-media="max"
+                   data-section="hero">Contact</p>
+                <h1 class="section-heading | heading-line"
+                    style="--flow-spacer: 0;"
+                    data-line-breakpoint="medium">Tell us about your project</h1>
+                <p>We’d love to hear more about your project. Please, leave a message below or give
+                    us a call. We have two offices, one in Texas and one in Tennessee. If you find
+                    yourself nearby, come say hello!</p>
+            </div>
+        </header>
+    </div>
+
+    <main id="main-content">
+        <section class="contact-section">
+            <div class="container">
+                <div class="grid-triple-columns"
+                     style="--spacer-triple-columns: var(--spacer-contact-info-grid)">
+                    <h2 class="section-heading | heading-line"
+                        data-width="narrow">Contact Details</h2>
+
+                    <div class="contact-info">
+                        <div>
+                            <p class="contact-info__label">Main Office</p>
+                            <p>Mail: archone@mail.com</p>
+                            <p>Address: 1892 Chenoweth Drive TN</p>
+                            <p>Phone: 123-456-3451</p>
+                        </div>
+                        <a href="#map"
+                           class="point-link">
+                            <span>View On Map</span>
+                            <img src="/fem-arch-studio-website/assets/icon-arrow-52179c19.svg"
+                                 alt="">
+                        </a>
+                    </div>
+
+                    <div class="contact-info">
+                        <div>
+                            <p class="contact-info__label">Office II</p>
+                            <p>Mail: archtwo@mail.com</p>
+                            <p>Address: 3399 Wines Lane TX</p>
+                            <p>Phone: 832-123-4321</p>
+                        </div>
+                        <a href="#map"
+                           class="point-link">
+                            <span>View On Map</span>
+                            <img src="/fem-arch-studio-website/assets/icon-arrow-52179c19.svg"
+                                 alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <div id="map"
+             class="section-spacer">
+            <div class="container"
+                 data-spacer="none-sm">
+                <picture>
+                    <source media="(min-width: 992px)"
+                            srcset="/fem-arch-studio-website/assets/image-map-300e9005.png ">
+                    <source media="(min-width: 576px)"
+                            srcset="/fem-arch-studio-website/assets/image-map-7c432c7b.png ">
+                    <img src="/fem-arch-studio-website/assets/image-map-57a7d361.png"
+                         alt="Map marking places of Arch Studio offices."
+                         class="width-100">
+                </picture>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <section class="section-spacer">
+            <div class="container">
+                <div class="grid-double-uneven-columns">
+                    <h2 class="section-heading"
+                        data-width="narrow">Connect with us</h2>
+
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <input aria-label="Name"
+                                   type="text"
+                                   placeholder="Name"
+                                   name="name"
+                                   id="name"
+                                   required>
+                            <p aria-live="polite"
+                               role="alert"
+                               class="input-error"></p>
+                        </div>
+
+                        <div class="input-group">
+                            <input aria-label="Email"
+                                   type="email"
+                                   placeholder="Email"
+                                   name="email"
+                                   id="email"
+                                   required>
+                            <p aria-live="polite"
+                               role="alert"
+                               class="input-error"></p>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea aria-label="Message"
+                                      placeholder="Message"
+                                      name="message"
+                                      id="message"
+                                      required></textarea>
+                            <p aria-live="polite"
+                               role="alert"
+                               class="input-error"></p>
+                        </div>
+
+                        <button aria-label="Submit"
+                                type="submit"
+                                class="button">
+                            <img src="/fem-arch-studio-website/assets/icon-arrow-light-d2fd82fd.svg"
+                                 alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container"
+         data-spacer="none-md">
+        <footer class="page-footer">
+            <div class="logo-container">
+                <a href="/index.html">
+                    <img src="/fem-arch-studio-website/assets/logo-light-c6f13816.svg"
+                         alt="Arch homepage">
+                </a>
+            </div>
+
+            <nav aria-label="footer">
+                <ul class="page-footer__nav-list">
+                    <li>
+                        <a href="/pages/portfolio.html"
+                           class="link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/pages/about.html"
+                           class="link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/pages/portfolio.html"
+               class="button">
+                <span>See Our Portfolio</span>
+                <img src="/fem-arch-studio-website/assets/icon-arrow-light-d2fd82fd.svg"
+                     alt="">
+            </a>
+        </footer>
+    </div>
+
+    
+    <script src="/src/ts/contact-form.ts"></script>
+</body>
+
+</html>
