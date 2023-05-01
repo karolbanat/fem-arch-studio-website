@@ -86,3 +86,5 @@ function displaySuccessMessage(element: HTMLElement): HTMLElement {
 	element.appendChild(successMessage);
 	return successMessage;
 }
+
+export {};
